@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: url("./assets/kupalo.png");
+  background-position: right;
   background-size: cover;
   padding-top: 2%;
 }
@@ -17,7 +18,7 @@ body {
 .container {
   margin: auto;
   width: 95%;
-  height: 100%;
+  height: 96%;
   position: relative;
 }
 .svaston {
@@ -35,18 +36,18 @@ body {
 
 .main {
   margin: auto;
-  width: 70%;
-  padding-top: 156px;
+  width: 80%;
+  padding-top: 208px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .logo_container {
-  margin-left: 35px;
+  margin-left: 36px;
   height: 50%;
   width: 100%;
-  margin-bottom: 52px;
+  margin-bottom: 36px;
 }
 
 .logo {
@@ -59,34 +60,34 @@ body {
   font-family: "DIN Condensed";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 92%;
   /* or 29px */
   text-align: center;
   color: #ffa156;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .description {
   font-family: "DIN Alternate";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
 
-  margin-bottom: 64px;
+  margin-bottom: 36px;
 }
 
 .btn {
-  width: 259px;
-  height: 64px;
+  width: 188px;
+  height: 36px;
   padding-bottom: 4px;
   font-family: "Dobrozrachniy";
   font-style: normal;
   font-weight: 400;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 74.5%;
   /* or 25px */
   color: #051288;
@@ -98,14 +99,14 @@ body {
   );
   border: 3px solid #000000;
   border-radius: 10px;
-  margin-bottom: 64px;
+  margin-bottom: 36px;
 }
 
 .social {
   font-family: "DIN Alternate";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 21px;
   text-align: center;
 
@@ -115,4 +116,127 @@ body {
 .social a {
   color: #ffd937;
   text-decoration: underline;
+}
+
+@media (min-width: 480px) {
+  .main {
+    width: 90%;
+    padding-top: 176px;
+  }
+
+  .logo_container {
+    margin-left: 52px;
+    width: 90%;
+  }
+  .title {
+    font-size: 28px;
+    margin-bottom: 44px;
+  }
+  .description {
+    font-size: 18px;
+    margin-bottom: 56px;
+  }
+  .btn {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 64px;
+  }
+  .social {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  .logo_container {
+    margin-left: 60px;
+    width: 80%;
+  }
+}
+@media (min-width: 680px) {
+  .logo_container {
+    margin-left: 60px;
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-top: 172px;
+  }
+  .logo_container {
+    margin-left: 60px;
+    width: 60%;
+  }
+  .title {
+    margin-bottom: 36px;
+  }
+  .description {
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+  .btn {
+    font-size: 28px;
+    width: 240px;
+    height: 48px;
+  }
+  .social {
+    font-size: 18px;
+  }
+}
+@media (min-width: 884px) {
+  .logo_container {
+    margin-left: 64px;
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    width: 60%;
+    padding-top: 216px;
+  }
+  .logo_container {
+    margin-left: 48px;
+    width: 55%;
+  }
+  .title {
+    width: 90%;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-position: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    padding-top: 208px;
+    width: 50%;
+  }
+  .logo_container {
+    margin-left: 72px;
+    width: 60%;
+  }
+
+  .description {
+    margin-bottom: 64px;
+  }
+  .btn {
+    font-size: 34px;
+    width: 258px;
+    height: 56px;
+    margin-bottom: 64px;
+  }
+  .social {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    padding-top: 172px;
+  }
 }
