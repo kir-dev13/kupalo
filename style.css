@@ -1,10 +1,12 @@
 @font-face {
-  font-family: "Dobrozrachniy";
-  src: url("./fonts/Dobrozrachniy-Regular.ttf") format("truetype");
+  font-family: "Bombardier";
+  src: url("./fonts/Bombardier/Bombardier-Regular.ttf") format("truetype");
 }
 
-@import url("https://fonts.cdnfonts.com/css/din-condensed");
-@import url("https://fonts.cdnfonts.com/css/din-alternate");
+@font-face {
+  font-family: "Directstep";
+  src: url("./fonts/Direct_step/directstep0_1.ttf") format("truetype");
+}
 
 body {
   width: 100vw;
@@ -57,7 +59,8 @@ body {
 }
 
 .title {
-  font-family: "DIN Condensed";
+  text-shadow: 1px 4px 2px black;
+  font-family: "Bombardier";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -69,7 +72,8 @@ body {
 }
 
 .description {
-  font-family: "DIN Alternate";
+  text-shadow: 2px 2px 2px black;
+  font-family: "Bombardier";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -86,17 +90,15 @@ body {
   justify-content: center;
   width: 188px;
   height: 36px;
-  padding-bottom: 4px;
-  font-family: "Dobrozrachniy";
+  font-family: "Directstep";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 74.5%;
-  /* or 25px */
   color: #051288;
-  /* text-align: center; */
-  background: radial-gradient(
-    55.37% 150.41% at 65.27% -15.95%,
+  background-size: 180% 110%;
+  background-image: radial-gradient(
+    70.37% 150.41% at 65.27% -15.95%,
     #ffff00 0%,
     #ff6dd1 100%
   );
@@ -106,7 +108,7 @@ body {
 }
 
 .social {
-  font-family: "DIN Alternate";
+  font-family: "Bomardier";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -181,9 +183,22 @@ body {
     font-size: 28px;
     width: 240px;
     height: 48px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
+  .btn:hover {
+    background-position: 90% 80%;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
   .social {
     font-size: 18px;
+  }
+  .social a:hover {
+    color: #fde785;
   }
 }
 @media (min-width: 884px) {
@@ -235,11 +250,5 @@ body {
   }
   .social {
     font-size: 18px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .main {
-    /* padding-top: 172px; */
   }
 }
